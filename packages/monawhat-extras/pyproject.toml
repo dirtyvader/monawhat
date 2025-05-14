@@ -1,0 +1,19 @@
+[project]
+name = "monawhat-extras"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Nicolas Grenet", email = "nicolas.grenet.ext@ac-aix-marseille.fr" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "monawhat>=0.1.0"
+]
+
+[tool.uv.sources]
+monawhat = { workspace = true }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
