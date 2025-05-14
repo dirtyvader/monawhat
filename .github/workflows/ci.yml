@@ -103,7 +103,7 @@ jobs:
       - name: Build docs
         run: |
           cd docs
-          make html
+          uv run make html
 
   build:
     runs-on: ubuntu-latest
