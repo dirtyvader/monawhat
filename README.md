@@ -55,11 +55,11 @@ Purity is a core concept in functional programming. It means that a function sho
 
 - **Modern Python features** - Uses Python 3.11+ typing features and latest language patterns
 - **Comprehensive type hints** - Full type safety with no `Any` cop-outs
-- **Thoroughly tested** - ~~100%~~ (hum... less) test coverage with clear examples
+- **Thoroughly tested** - ~~100%~~ 95% test coverage with clear examples
 - **Educational design** - Built to be approachable with clear documentation
 - **Actively maintained** - Supported until all planned features in `monawhat_extras` are complete (Or the hype for the lib is so huge that I can't seriously let it go)
 
-Where other libraries may be abandoned, poorly documented, or use dated Python patterns, `monawhat` focuses on being a fresh, modern implementation that feels at home in contemporary Python code.
+`monawhat` focuses on being a fresh, modern implementation that feels at home in contemporary Python code.
 
 ## Installation
 
@@ -80,10 +80,6 @@ conda install -c conda-forge monawhat
 ```
 
 ~~For advanced features, install the extras package:~~ (soon)
-
-```bash
-pip install monawhat-extras
-```
 
 ## Core Concepts
 
@@ -198,7 +194,7 @@ def process_items(items):
 ### IO Monad: Managing Side Effects
 `IO` monad is somewhat special. It's not a pure monad, as it allows side effects. It's a monad that represents an effectful computation. It's useful for managing side effects like input/output, file operations, or network requests.
 
-`IO` is the mandatory mechanism for side effects, like IO operations, in Haskell language. Python have already good mechanisms for io, and it allow side effects everywhere, so `IO` is here for consistency.
+`IO` is the mandatory mechanism for I/O operations in Haskell language. Python have already good mechanisms for I/O, and it allow side effects everywhere, so `IO` is here for consistency.
 
 It comes in two variants: `IO` and `IOLite`. `IOLite` is a minimal implementation focused on core monad operations. `IO` is a full-featured, still generalist, IO monad.
 
